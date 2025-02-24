@@ -5,7 +5,8 @@ let images = {
     "Snow": "src/images/snow.png",    
     "Fog": "src/images/mist.jpg",     
     "Thunderstorm": "src/images/thunderstorm.jpg",
-    "Wind": "src/images/wind.jpg"
+    "Wind": "src/images/wind.jpg",
+    "Mist": "src/images/mist.jpg"     
 };
 
 document.getElementById("btn").addEventListener("click", async function () {
