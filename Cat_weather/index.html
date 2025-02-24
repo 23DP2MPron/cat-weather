@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Weather</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/png" href="src/images/cat_weather_logo-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="logo"> <img class="logo_image" src="src/images/cat_weather_logo-removebg-preview.png" alt="">Cat Weather</div>
+        <nav>
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#image_container">Proposed cities</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1 class="hero_text">  <img class="hero_image" src="src/images/Flux_Dev_a_whimsical_feline_news_anchor_with_a_sleek_grey_and__2.jpeg"> Want to know the weather? Ask the cat.</h1>
+    </section>
+
+    <div class="marquee">
+        <span>The best weather forecast &nbsp; The best weather forecast &nbsp; The best weather forecast &nbsp; The best weather forecast</span>
+    </div>
+
+    <div class="weather" id="weather">
+        <input class="input" id="bar" type="text" placeholder="Enter your city">
+        <button class="btn" id="btn">Search</button>
+        
+    </div>
+
+    <div class="weather_output">
+        <img src="" id="image">
+        <ul class="weather_list">
+            <li><h3 id="city_name"></h3></li>   
+            <li><p id="degrades_answer"></p></li>
+            <li><p id="feels_like"></p></li>
+        </ul>
+        <ul>
+            <li><p></p></li>
+            <li><p id="wind_speed"></p></li>
+            <li><p id="pressure"></p></li>
+        </ul>    
+    </div>
+
+    <div class="image_container"></div>
+    <h2 class="image_container_title">Proposed cities:</h2>
+    <div id="image_container" >
+        <div class="scroll-wrapper" >
+            <div class="image-item">
+                <div class="image-text">Riga</div>
+                <img src="https://images.ctfassets.net/nwbqij9m1jag/4dxzxt15VKKWwiAqMkACyU/90163ed13d944d650722683f7f308bdf/city-hall-square-old-town-riga.jpg" alt="Riga" class="search_image" data-word="Riga">
+            </div>
+            <div class="image-item">
+                <div class="image-text">London</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/640px-London_Skyline_%28125508655%29.jpeg" alt="London" class="search_image" data-word="London">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Berlin</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg/800px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg" alt="Berlin" class="search_image" data-word="Berlin">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Rome</div>
+                <img src="https://i.natgeofe.com/k/a6c9f195-de20-445d-9d36-745ef56042c5/OG_Colosseum_Ancient-Rome_KIDS_1122_3x2.jpg" alt="Rome" class="search_image" data-word="Rome">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Madrid</div>
+                <img src="https://img.static-kl.com/images/media/65848EF5-2848-4EA7-BE113130180A0A55" alt="Madrid" class="search_image" data-word="Madrid">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Barcelona</div>
+                <img src="https://sitgesluxuryrentals.com/wp-content/uploads/2017/05/barcelona1.jpg" alt="Barcelona" class="search_image" data-word="Barcelona">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Kyiv</div>
+                <img src="https://content.r9cdn.net/rimg/dimg/27/bb/1e63bfbb-city-15139-1645cdf896a.jpg?width=1366&height=768&xhint=2663&yhint=911&crop=true" alt="Kyiv" class="search_image" data-word="Kyiv">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Warsaw</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg/640px-Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg" alt="Warsaw" class="search_image" data-word="Warsaw">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Vienna</div>
+                <img src="https://www.adventourely.com/wp-content/uploads/2023/11/Where-to-Stay-in-Vienna.jpg" alt="Vienna" class="search_image" data-word="Vienna">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Hamburg</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOXcayglVLe6ls8YHf17iWcues82xMviLXA&s" alt="Hamburg" class="search_image" data-word="Hamburg">
+            </div>
+            <div class="image-item">
+                <div class="image-text">Budapest</div>
+                <img src="https://images.musement.com/cover/0002/45/budapest_header-144654.jpeg" alt="Budapest" class="search_image" data-word="Budapest">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <footer id="footer" class="footer">
+        <div class="contacts">
+            <a href="https://www.facebook.com/DonaldTrump/">Facebook</a>
+            <a href="https://www.instagram.com/willsmith/">Instagram</a>
+            <a href="https://x.com/elonmusk">X(twitter)</a>
+            <p>Email:a230912mp@rvt.lv</p>
+            <p>Phone:25120345</p>
+            <p>© 2025 Cat Weather</p>
+            
+
+        </div>
+        
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
